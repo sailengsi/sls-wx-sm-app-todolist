@@ -1,0 +1,44 @@
+<template name='edit-todo'>
+	<view class="edit-todo">
+		<view class="edit-top-bg"></view>
+		<view class="edit-content">
+			<view class="cate-input-group">
+			  	<input auto-focus class="cate-input" 
+			  		value="{{todo.cate_name}}"
+			  		bindinput="changeCateName" 
+			  		placeholder="任务名称"
+			  		placeholder-style="color:#ccc"/>
+			</view>
+			<view class='add-todo-list'>
+				<scroll-view class="scroll-view-todo-item" 
+					scroll-x="true"
+					wx:for="{{todo.todo_list}}" 
+					wx:for-item="item" 
+					wx:for-index="i" 
+					wx:key="k"
+					scroll-left="{{scroll_left}}">
+					<view class="add-todo-li scroll-item">
+						<checkbox-group class="todo-checkbox" bindchange='changeTodoStatus' id='{{i}}'>
+						  	<label class="checkbox">
+						    	<checkbox value="{{i}}" checked="{{item.type}}"/>
+						  	</label>
+						</checkbox-group>
+						<input type="text" class="todo-name" 
+							value="{{item.todo_name}}"
+							bindinput="changeTodoName" 
+							id="{{i}}" 
+							placeholder="todo名称"
+							placeholder-style="color:#ccc"/>
+					</view>
+					<view class="todo-item-delete scroll-item" bindtap="deleteTodoItem" id="{{i}}">删除</view>
+				</scroll-view>
+			</view>
+			<view class="cate-btn" bindtap="addTodoItem">
+				+ 添加事项
+			</view>
+		</view>
+	</view>
+	<view class="todo-save-btn">
+		<button type="primary" size="mini" bindtap="saveTodo">保存</button>
+	</view>
+</template>

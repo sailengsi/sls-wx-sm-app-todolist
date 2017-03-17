@@ -1,0 +1,28 @@
+<view id="setting-content">
+	<view class="setting-userinfo">
+		<view class="user-ava">
+			<image src="{{userInfo.avatarUrl}}"></image>
+		</view>
+		<view class="user-name">{{userInfo.nickName}}</view>
+	</view>
+	<view class="statis-list">
+		<view class="statis-li statis-bb">
+			全部
+			<text class="statis-num statis-all">{{all}}</text>
+		</view>
+		<view class="statis-li statis-bb">
+			已完成
+			<text class="statis-num statis-finished">{{finished}}</text>
+		</view>
+		<view class="statis-li">
+			未完成
+			<text class="statis-num statis-nofinished">{{nofinished}}</text>
+		</view>
+	</view>
+	<!-- <view class="share-text">
+		<view class="share-name">
+			分享人：{{share.name}}
+		</view>
+	</view> -->
+    <view class="clear-todo-btn" bindtap="clearTodo">清楚缓存</view>
+</view>

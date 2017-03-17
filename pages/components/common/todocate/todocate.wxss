@@ -1,0 +1,96 @@
+Page{
+	background: #FFF;
+}
+.edit-content{
+	padding-bottom: 66px;
+}
+.edit-top-bg{
+	width:100%;
+	height: 18px;
+	background: #f9f9f9;
+}
+.cate-input-group{
+	width: 100%;
+	height:44px;
+	background: #FFF;
+	border-top: 1px solid #dddddd;
+	border-bottom: 1px solid #dddddd;
+	padding: 0px 10px;
+	box-sizing: border-box;
+}
+.cate-input{
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	background: #FFF;
+	font-size: 14px;
+}
+.cate-btn{
+	margin-top: 10px;
+	height: 40px;
+	line-height: 40px;
+	color:#5fd592;
+	font-size: 14px;
+	padding-left: 20px;
+}
+
+
+.add-todo-list{
+	padding: 0px 1px 0px 17px;
+	background: #FFF;
+}
+.add-todo-li{
+	width:100%;
+	line-height: 40px;
+	background: #FFF;
+	border-bottom: 1px solid #dddddd;
+	position: relative;
+	
+}
+
+.todo-checkbox{
+	display: inline-block;
+	position: absolute;
+	left:0px;
+	top:0px;
+}
+
+
+.todo-name{
+	display: inline-block;
+	position: absolute;
+	top:0px;
+	left:36px;
+	height: 44px;
+	font-size: 14px;
+	line-height: 44px;
+}
+
+
+.scroll-view-todo-item{
+    width:100%;
+    white-space:nowrap;
+}
+.scroll-item{
+	height: 40px;
+    display: inline-block;
+}
+.todo-item-delete{
+	width:60px;
+	position: absolute;
+	right:-100px;
+	top:0px;
+	background: red;
+	color:#FFF;
+	line-height: 40px;
+	text-align: center;
+}
+
+.todo-save-btn button{
+	width: 90%;
+	height: 36px;
+	margin-left: 5%;
+	position: fixed;
+	bottom:10px;
+	line-height: 36px;
+}

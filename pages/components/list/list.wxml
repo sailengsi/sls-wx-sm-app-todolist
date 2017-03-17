@@ -1,0 +1,33 @@
+<view id="cate-content">
+    <view class="sort-content">
+        <view class="sort-status sort-item" bindtap="setSortTodo" id="filter">
+            {{show_filter_text}}
+            <image class="arrow-image" src="../../../image/arrow_down.png"></image>
+        </view>
+        <view class="sort-time sort-item" bindtap="setSortTodo" id="time">
+            {{show_time_text}}
+            <image class="arrow-image" src="../../../image/arrow_down.png"></image>
+        </view>
+    </view>
+    <view class='cate-list'>
+        <scroll-view class='cate-li-scroll bd' 
+            scroll-x="true"
+            wx:for="{{cate_list}}"
+            wx:key="k" 
+            wx:for-item='cate' 
+            wx:for-index='i'
+            wx:if="{{show_type==='all' || (show_type==='finished' && cate.type===true) || (show_type==='nofinished' && cate.type===false)}}"
+            scroll-left="{{scroll_left}}">
+            <navigator url="../edit/edit?id={{cate.id}}">
+                <view class='cate-li scroll-item bd'>
+                    <view class='cate-li-text bd {{cate.type ? "finished" : ""}}'>{{cate.cate_name}}</view>
+                    <image class="action-img" src="../../../image/left-right.png"></image>
+                </view>
+            </navigator>
+            <view class='cate-li-action scroll-item'>
+                <view class="action-finish action-item" id="{{cate.id}}" bindtap="toggleTodoItem">标记{{cate.type ? '未' : '已'}}完成</view>
+                <view class="action-delete action-item" id="{{cate.id}}" bindtap="removeTodoItem">删除</view>
+            </view>
+        </scroll-view>
+    </view>
+</view>

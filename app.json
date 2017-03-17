@@ -1,0 +1,39 @@
+{
+    "pages": [
+        "pages/components/list/list",
+        "pages/components/add/add",
+        "pages/components/setting/setting",
+        "pages/components/edit/edit"
+    ],
+    "tabBar": {
+        "color": "#000",
+        "selectedColor": "#3cc51f",
+        "borderStyle": "black",
+        "backgroundColor": "#FFF",
+        "list": [{
+            "pagePath": "pages/components/list/list",
+            "iconPath": "image/tabicon/list.png",
+            "selectedIconPath": "image/tabicon/list_active.png",
+            "text": "清单"
+        }, {
+            "pagePath": "pages/components/add/add",
+            "iconPath": "image/tabicon/add.png",
+            "selectedIconPath": "image/tabicon/add_active.png",
+            "text": "添加"
+        }, {
+            "pagePath": "pages/components/setting/setting",
+            "iconPath": "image/tabicon/setting.png",
+            "selectedIconPath": "image/tabicon/setting_active.png",
+            "text": "设置"
+        }]
+    },
+    "window": {
+        "navigationBarBackgroundColor": "#0EBF5A",
+        "navigationBarTitleText": "",
+        "navigationBarTextStyle": "white",
+
+        "backgroundTextStyle": "dark",
+        "enablePullDownRefresh": false
+    },
+    "debug": false
+}

@@ -1,0 +1,52 @@
+Page{
+	background: #EEE;
+}
+.setting-userinfo{
+	width: 100%;
+	height: 170px;
+	text-align: center;
+	background: #4bdc87;
+}
+
+.user-ava image{
+	width:85px;
+	height: 85px;
+	border-radius: 100%;
+	margin-top: 26px;
+}
+.user-name{
+	font-size: 16px;
+	color:#FFF;
+	line-height: 44px;
+}
+
+.clear-todo-btn{
+	height: 40px;
+	line-height: 40px;
+	background: #FFF;
+	color:red;
+	margin-top: 36px;
+	text-align: center;
+}
+
+
+.statis-list{
+	margin-top: 26px;
+	background: #FFF;
+	border-top: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+	padding-left: 5%;
+}
+.statis-li{
+	width:100%;
+	height: 40px;
+	line-height: 40px;
+	font-size: 14px;
+}
+.statis-bb{
+	border-bottom: 1px solid #ddd;
+}
+.statis-num{
+	float: right;
+	margin-right: 10px;
+}

@@ -1,0 +1,3 @@
+<import src="../common/todocate/todocate" />
+
+<template is="edit-todo" data="{{todo,scroll_left}}"/>
